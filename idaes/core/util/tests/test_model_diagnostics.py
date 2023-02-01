@@ -317,7 +317,6 @@ def test_problem1():
 @pytest.mark.skipif(not pyo.SolverFactory("ipopt").available(False), reason="no Ipopt")
 @pytest.mark.unit
 def test_problem2_without_degenerate_constraint():
-
     # Create test problem instance
     m2 = example2(with_degenerate_constraint=False)
 
@@ -364,7 +363,6 @@ def test_problem2_without_degenerate_constraint():
 @pytest.mark.skipif(not pyo.SolverFactory("ipopt").available(False), reason="no Ipopt")
 @pytest.mark.unit
 def test_problem2_with_degenerate_constraint():
-
     # Create test problem instance
     m2 = example2(with_degenerate_constraint=True)
 
